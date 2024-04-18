@@ -1,0 +1,36 @@
+.add-note-button{
+    width: 70px;
+    height: 40px;
+    border: solid 2px black;
+    background: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.button-text{
+    margin-left: 4px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+  
+.box {
+width: 500px;
+margin: 20px;
+/* background: red; */
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
