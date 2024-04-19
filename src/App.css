@@ -1,16 +1,14 @@
 .app{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
 }
 
 .app-name{
     margin: 20px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
-.main{
-    display: flex;
-    
-}

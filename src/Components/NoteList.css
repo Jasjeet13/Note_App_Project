@@ -1,14 +1,18 @@
 .add-note-button{
-    width: 70px;
+    width: 40px;
     height: 40px;
-    border: solid 2px black;
-    background: transparent;
+    /* border: solid 2px black; */
+    border: none;
+    background: black;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    z-index: 1;
+    border-radius: 60%;
+}
+
+.add-note-button i{
+    color: white;
 }
 
 .button-text{
@@ -24,13 +28,38 @@
 }
   
 .box {
-width: 500px;
-margin: 20px;
-/* background: red; */
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-border-radius: 15px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 500px;
+    margin: 20px;
+    /* background: red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.add-note-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.color-picker{
+    display: flex;
+    /* flex-direction: column; */
+    margin: 5%;
+}
+
+.color-picker li{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 3px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+

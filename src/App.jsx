@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import NoteList from './Components/NoteList';
 import Note from './Components/Note';
 import './App.css'
-import Add from './Components/Add';
 
 function App() {
   const [notes, setNotes] = useState([]);
 
   // to handle adding a new note
-  const handleAddNote = (title) => {
-    setNotes([...notes, { id: Date.now(), title, content: '' }]);
+  const handleAddNote = (title,color) => {
+    setNotes([...notes, { id: Date.now(), title, content: '' ,color}]);
     // ...notes -> spread operator to create a shallow copy of the notes array
     // it appends the new note to this copy array
     // date.now() -> returns current time stamp 
@@ -26,19 +25,18 @@ function App() {
   };
 
   return (
-    <div className='main'>
-      <Add />
+    // <div className='main'>
     <div className='app'>
-      <h1 className='app-name'>MY NOTES APP</h1>
+      <p className='app-name'>MY NOTES</p>
       <NoteList
         notes={notes}
         onAddNote={handleAddNote}
         onEditNote={handleEditNote}
         onDeleteNote={handleDeleteNote}
-        
       />
+
     </div>
-    </div>
+    // </div>
   );
 }
 

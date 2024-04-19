@@ -60,7 +60,9 @@ function Note({title,content,onEdit,onDelete}) {
                     <textarea className='input-content' name="content" value={editedContent} onChange={handleChange} cols="30" rows="10" placeholder='Enter content!'></textarea>
                 )}
 
-                <button className='buttons' onClick={handleSave}>Save</button>
+                <button className='buttons' onClick={handleSave}>
+                    <i className="fa-regular fa-bookmark"></i>
+                </button>
 
             </div>
             )}
@@ -74,8 +76,12 @@ function Note({title,content,onEdit,onDelete}) {
                         </div>
 
                         <div className='two-button'>
-                            <button className='buttons' onClick={handleEdit}>Edit</button>
-                            <button className='buttons' onClick={onDelete}>Delete</button>
+                            <button className='buttons' onClick={handleEdit}>
+                                <i className="fa-solid fa-pen"></i>
+                            </button>
+                            <button className='buttons' onClick={onDelete}>
+                                <i className="fa-solid fa-trash"></i>
+                            </button>
                         </div>
 
                     </div>

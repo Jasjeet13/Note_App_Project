@@ -5,7 +5,7 @@
 }
 
 .note{
-    width: 500px;
+    width: 470px;
     height: 350px;
     /* background: red; */
     display: flex;
@@ -29,6 +29,7 @@
     width: 100%;
     height: 30px;
     border: none;
+    background: transparent;
 }
 
 .input-title:focus {
@@ -45,20 +46,25 @@
     width: 100%;
     height: 220px;
     border: none;
+    background: transparent;
 }
 
 
 .buttons{
-    height: 30px;
-    width: 70px;
-    border-radius: 4px;
-    border: solid 2px black;
-    background: transparent;
+    height: 40px;
+    width: 40px;
+    /* border-radius: 4px; */
+    /* border: solid 2px black; */
+    /* background: transparent; */
     align-items: center;
+    border-radius: 50%;
+    background: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
 }
 
 .note-view{
-    width: 500px;
+    width: 470px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -83,4 +89,8 @@
 
 .two-button button{
     margin: 4%;
+}
+
+.buttons i{
+    color: white;
 }
